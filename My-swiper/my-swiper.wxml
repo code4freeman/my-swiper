@@ -1,0 +1,28 @@
+<!-- 
+    旋转木马轮播组件
+
+    参数： 
+        1.source <Array> 用于生成轮播图的数据集合 如：[{url: "",...},...]
+        2.direction <String> 轮播方向,只能为“left”和“right”
+        3.delay <Number> 轮播间隔毫秒数，建议不小于1000
+    
+    事件：
+        1.touch({detail:{url,your_keys ...}})
+
+-->
+
+<view class="my-swiper" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+
+  <!-- 焦点指示器 -->
+  <view class="focus-box">
+    <view class="child {{index == idx?'active':''}}" wx:for="{{listData}}" wx:for-index="idx"></view>
+  </view>
+
+  <!-- 渲染每一张图片 -->
+  <block wx:for="{{listData}}">
+    <view style="{{isLoading ? 'transition:all 0.5s':''}}" class="child-base {{item.type}}" bindtap='touch' data-idx="{{index}}">
+      <image src="{{item.img}}"></image>
+    </view>
+  </block>
+
+</view>

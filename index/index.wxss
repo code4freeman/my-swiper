@@ -1,0 +1,5 @@
+/* index/index.wxss */
+page{
+  padding: 10px;
+  box-sizing: border-box;
+}

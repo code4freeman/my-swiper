@@ -1,0 +1,2 @@
+<!-- 旋转木马3d轮播组件测试 -->
+<my-swiper source="{{source}}" direction="left" delay="{{1000}}" bind:touch="touch"></my-swiper>
