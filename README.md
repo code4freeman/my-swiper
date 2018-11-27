@@ -1,6 +1,6 @@
 # 简单的小程序3D旋转木马轮播组件
 
-![avatar](http://my-swiper.kuaiyunds.com/my-swiper/gif.gif)
+![avatar](./GIF.gif)
 
 ## 如何使用
 按照小程序官方组件说明，引入该仓库下的My-swiper组件即可
